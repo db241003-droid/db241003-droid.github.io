@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio of [Your Name] — developer, designer, and SMC trader. Explore projects, skills and contact info." />
+  <title>[JNR] — Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="BENEDICT.CSS">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">[BENEDICT]</a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false" aria-controls="mobileNav">
+        <span class="sr-only">Toggle menu</span>
+        ☰
+      </button>
+    </div>
+
+    <nav id="mobileNav" class="mobile-nav" hidden>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 id="hero-title">Hi — I’m <span class="accent">[BENEDICT]</span></h1>
+          <p class="lead">Developer &amp; SMC Trader crafting clean UX and reliable front-end code. I build websites, charts, and trading dashboards.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#projects">View Work</a>
+            <a class="btn" href="#contact">Contact Me</a>
+          </div>
+          <ul class="meta-list" aria-hidden="true">
+            <li>Available for hire</li>
+            <li>Remote / Contract</li>
+            <li>Based in [ABUJA, NIGERIA]</li>
+          </ul>
+        </div>
+
+        <div class="hero-card" aria-hidden="false">
+          <div class="profile-wrap">
+            <img src="BEN-10.jpg" alt="Portrait photo of [BENEDICT]" />
+          </div>
+          <div class="quick-stats">
+            <div><strong>1+</strong><span>Years Experience</span></div>
+            <div><strong>20+</strong><span>Projects</span></div>
+            <div><strong>SMC</strong><span>Trader</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading">About</h2>
+        <div class="about-grid">
+          <div>
+            <p>Hello — I'm <strong>[BENEDICT]</strong>. I design and develop front-end experiences and trading dashboard tools. My work focuses on clean UI, accessible markup, and reliable performance.</p>
+            <p>I use Smart Money Concepts in trading and combine that discipline with technical craft when building UIs and tools.</p>
+            <p><strong>Want a copy of my CV?</strong> <a href="bd6518477@gmail.com?subject=CV%20Request">Email me</a>.</p>
+          </div>
+          <ul class="about-list">
+            <li><strong>Role:</strong> Front-end Developer</li>
+            <li><strong>Specialty:</strong> React, Vanilla JS, CSS, Trading UIs</li>
+            <li><strong>Interests:</strong> SMC, market structure, building dashboards</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <h2 id="projects-heading">Selected Projects</h2>
+        <p class="muted">Click any card for more details.</p>
+
+        <div id="projectsGrid" class="projects-grid" aria-live="polite">
+          <!-- Project cards populated by scripts.
+        </div>
+      </div>
+
+      <!-- Project Modal -->
+      <dialog id="projectModal" class="project-modal" aria-labelledby="modalTitle">
+        <button id="modalClose" class="modal-close" aria-label="Close project details">✕</button>
+        <div class="modal-content">
+          <h3 id="modalTitle"></h3>
+          <p id="modalDesc"></p>
+          <div id="modalTags" class="tags"></div>
+          <div class="modal-links">
+            <a id="modalLive" class="btn" href="#" target="_blank" rel="noopener">Live</a>
+            <a id="modalCode" class="btn" href="#" target="_blank" rel="noopener">Code</a>
+          </div>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill">
+            <h4>Front-end</h4>
+            <div class="skill-list">HTML · CSS · JavaScript · React</div>
+          </div>
+          <div class="skill">
+            <h4>Trading Tools</h4>
+            <div class="skill-list">Charting UI · Price action tools · Alerts</div>
+          </div>
+          <div class="skill">
+            <h4>Design</h4>
+            <div class="skill-list">Figma · Prototyping · Accessibility</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="section muted-bg" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <h2 id="testimonials-heading">What people say</h2>
+        <div class="testimonials-grid">
+          <blockquote>
+            <p>"[BENEDICT] delivered a clean, fast dashboard that helped our trading team spot structure faster."</p>
+            <footer>— Trader, Acme Funds</footer>
+          </blockquote>
+          <blockquote>
+            <p>"Great developer: communicates clearly and ships on time."</p>
+            <footer>— Product Lead, Fintech Co.</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-grid">
+        <div>
+          <h2 id="contact-heading">Get in touch</h2>
+          <p>Interested in working together? Fill out the form or email me directly: <a href="mailto:you@example.com">you@example.com</a></p>
+        </div>
+
+        <form id="contactForm" class="contact-form" action="#" novalidate>
+          <label>
+            <span class="label">Name</span>
+            <input name="name" required type="text" placeholder="Your name" />
+          </label>
+
+          <label>
+            <span class="label">Email</span>
+            <input name="email" required type="email" placeholder="you@example.com" />
+          </label>
+
+          <label>
+            <span class="label">Message</span>
+            <textarea name="message" required rows="5" placeholder="Describe your project or question..."></textarea>
+          </label>
+
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send</button>
+            <button class="btn" type="button" id="mailtoBtn">Open Email</button>
+          </div>
+
+          <p id="formMsg" class="form-msg" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>© <span id="year"></span> [Your Name]. Built with care.</small>
+      <div class="socials">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="BENEDICT.JS" defer></script>
+</body>
+</html>
